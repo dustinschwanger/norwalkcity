@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext'
 import { getTranslation } from '../translations'
 
 const CalendarEvents = () => {
-  const [currentDate] = useState(new Date())
+  const [currentDate] = useState(new Date(2025, 10, 1)) // November 2025
   const { language } = useLanguage()
 
   // Sample events data
@@ -12,7 +12,7 @@ const CalendarEvents = () => {
     {
       id: 1,
       title: getTranslation(language, 'calendar.events.event1Title'),
-      date: 'October 5, 2025',
+      date: 'November 5, 2025',
       time: getTranslation(language, 'calendar.events.event1Time'),
       location: getTranslation(language, 'calendar.events.event1Location'),
       category: 'Government',
@@ -21,7 +21,7 @@ const CalendarEvents = () => {
     {
       id: 2,
       title: getTranslation(language, 'calendar.events.event2Title'),
-      date: 'October 8, 2025',
+      date: 'November 8, 2025',
       time: getTranslation(language, 'calendar.events.event2Time'),
       location: getTranslation(language, 'calendar.events.event2Location'),
       category: 'Community',
@@ -30,7 +30,7 @@ const CalendarEvents = () => {
     {
       id: 3,
       title: getTranslation(language, 'calendar.events.event3Title'),
-      date: 'October 10, 2025',
+      date: 'November 10, 2025',
       time: getTranslation(language, 'calendar.events.event3Time'),
       location: getTranslation(language, 'calendar.events.event3Location'),
       category: 'Recreation',
@@ -39,7 +39,7 @@ const CalendarEvents = () => {
     {
       id: 4,
       title: getTranslation(language, 'calendar.events.event4Title'),
-      date: 'October 15, 2025',
+      date: 'November 15, 2025',
       time: getTranslation(language, 'calendar.events.event4Time'),
       location: getTranslation(language, 'calendar.events.event4Location'),
       category: 'Community',
@@ -48,7 +48,7 @@ const CalendarEvents = () => {
     {
       id: 5,
       title: getTranslation(language, 'calendar.events.event5Title'),
-      date: 'October 18, 2025',
+      date: 'November 18, 2025',
       time: getTranslation(language, 'calendar.events.event5Time'),
       location: getTranslation(language, 'calendar.events.event5Location'),
       category: 'Government',
@@ -57,7 +57,7 @@ const CalendarEvents = () => {
     {
       id: 6,
       title: getTranslation(language, 'calendar.events.event6Title'),
-      date: 'October 25, 2025',
+      date: 'November 25, 2025',
       time: getTranslation(language, 'calendar.events.event6Time'),
       location: getTranslation(language, 'calendar.events.event6Location'),
       category: 'Community',
@@ -66,7 +66,7 @@ const CalendarEvents = () => {
     {
       id: 7,
       title: getTranslation(language, 'calendar.events.event7Title'),
-      date: 'October 20, 2025',
+      date: 'November 20, 2025',
       time: getTranslation(language, 'calendar.events.event7Time'),
       location: getTranslation(language, 'calendar.events.event7Location'),
       category: 'Recreation',
@@ -75,7 +75,7 @@ const CalendarEvents = () => {
     {
       id: 8,
       title: getTranslation(language, 'calendar.events.event8Title'),
-      date: 'October 28, 2025',
+      date: 'November 28, 2025',
       time: getTranslation(language, 'calendar.events.event8Time'),
       location: getTranslation(language, 'calendar.events.event8Location'),
       category: 'Government',
@@ -215,7 +215,7 @@ const CalendarEvents = () => {
                 <div key={event.id} className="event-card">
                   <div className="event-date-badge">
                     <div className="event-day">{event.day}</div>
-                    <div className="event-month">{getTranslation(language, 'calendar.oct')}</div>
+                    <div className="event-month">{getTranslation(language, 'calendar.nov')}</div>
                   </div>
 
                   <div className="event-details">

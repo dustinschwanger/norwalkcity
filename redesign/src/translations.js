@@ -131,6 +131,7 @@ export const translations = {
 
       // Month abbreviations
       oct: 'Oct',
+      nov: 'Nov',
 
       // Events
       events: {
@@ -328,6 +329,7 @@ export const translations = {
 
       // Month abbreviations
       oct: 'Oct',
+      nov: 'Nov',
 
       // Events
       events: {
